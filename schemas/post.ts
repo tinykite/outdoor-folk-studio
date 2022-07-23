@@ -24,12 +24,9 @@ export default {
       to: {type: 'author'},
     },
     {
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      name: 'description',
+      title: 'Description',
+      type: 'string',
     },
     {
       name: 'categories',
@@ -53,9 +50,10 @@ export default {
     select: {
       title: 'title',
       author: 'author.name',
+      description: 'description',
       media: 'mainImage',
     },
-    prepare(selection) {
+    prepare(selection: any) {
       const {author} = selection
       return {...selection, subtitle: author && `by ${author}`}
     },

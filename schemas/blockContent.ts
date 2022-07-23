@@ -61,5 +61,10 @@ export default {
       type: 'image',
       options: {hotspot: true},
     },
+    {
+      name: 'imageGrid',
+      title: 'Image Grid',
+      type: 'imageGrid',
+    },
   ],
 }
