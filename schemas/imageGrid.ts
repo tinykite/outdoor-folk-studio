@@ -33,8 +33,10 @@ export default {
       options: {
         list: [
           {title: 'Single', value: 'single'}, // Feels like there should be an easier way to do this
-          {title: '1x2', value: '1x2'},
-          {title: '2x2', value: '2x2'},
+          {title: 'Double (top)', value: '1x2xtop'},
+          {title: 'Double (bottom)', value: '1x2xbottom'},
+          {title: 'Double (standalone)', value: '1x2xstandalone'},
+          {title: 'Quad', value: '2x2'},
         ],
       },
     },
@@ -42,7 +44,13 @@ export default {
       name: 'caption',
       type: 'string',
       title: 'Caption',
-      description: 'What caption should we include with this image?',
+      description: 'What caption should we include with these images?',
+    },
+    {
+      name: 'imageCredit',
+      type: 'string',
+      title: 'Image credit',
+      description: 'What photo credit should we include with these images?',
     },
   ],
 }

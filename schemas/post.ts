@@ -29,6 +29,29 @@ export default {
       type: 'string',
     },
     {
+      name: 'postType',
+      title: 'Post Type',
+      type: 'string',
+    },
+    {
+      name: 'previewImage',
+      title: 'Preview Image',
+      type: 'image',
+      options: {hotspot: true},
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+        },
+      ],
+    },
+    {
+      name: 'imageCredit',
+      title: 'Image Credit',
+      type: 'string',
+    },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
