@@ -73,6 +73,16 @@ export default {
           type: 'string',
           title: 'Alternative text',
         },
+        {
+          name: 'width',
+          type: 'string',
+          title: 'Width',
+        },
+        {
+          name: 'height',
+          type: 'string',
+          title: 'Height',
+        },
       ],
     },
     {
